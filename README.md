@@ -1,23 +1,13 @@
-# AWSTerraformFinalTask
+# Terraform Task
 A Terraform code that produces the following AWS resources:
 (In the default VPC)
 - 2 Instances (t2.micro) - with NGINX running on each.
 - An Application Load Balancer that forwards the users’ traffic to the servers.
 
-<img width="700" alt="screenshot" src="5.png">
 
 
+## code:
 
-
-## Terraform code:
-
-
-
-- ## donwload Terraform : 
- 
- follow this link: https://www.terraform.io/downloads.html 
- 
-  
 - ## Create an AWS access key:
 
   - Create an IAM user.
@@ -25,12 +15,13 @@ A Terraform code that produces the following AWS resources:
 
 
 
-- ## After creating AWS access key and secret, add them to the code in main.tf under provider "aws" .
-
-- ## Create Security Group , to allow inbound web traffic.
+- ### After creating AWS access key and secret, add them to the code in main.tf under provider "aws" .
 
 
-- ## create two instances .
+     and Create Security Group to allow inbound web traffic.
+
+
+- ### create two instances .
     
 - ## create target group & attach instances to target group:
      the target status should be " Unused " (it'll take a while).
@@ -61,7 +52,6 @@ run the code:
  
  - ####  In your AWS load balancer you'll see the new ALB,chick on the DNS address and open in a browser 
  
-<img width="700" alt="screenshot" src="66.png">
 
    
   
